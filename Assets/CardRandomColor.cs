@@ -11,11 +11,6 @@ public class CardRandomColor : MonoBehaviour
         ChangeCardColor(GetRandomColor());
     }
 
-    void Update()
-    {
-        
-    }
-
     Color GetRandomColor()
     {
         int randomColorIndex = Random.Range(0, 3);

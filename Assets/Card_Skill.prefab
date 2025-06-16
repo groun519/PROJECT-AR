@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3320645f02547e94ebce93e947d75677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  damage: 1000
+  Speed: 4
+  damage: 3
   attacker: {fileID: 557700785, guid: b0e8e3074fe9cb34791f86dcd44f2f0b, type: 3}
   DestryTime: 5
   ShootSoundClip: {fileID: 8300000, guid: 929b2421c7d1fbb44bdef9b35978f051, type: 3}
