@@ -6,6 +6,8 @@ public class TFAnimtion : MonoBehaviour
 {
     [SerializeField]
     private GameObject Card;
+    [SerializeField]
+    private GameObject Card_Skill;
 
     [SerializeField]
     private GameObject CharacterMesh;
@@ -18,13 +20,15 @@ public class TFAnimtion : MonoBehaviour
     [SerializeField]
     private GameObject Enemy;
 
+    private Animator anim;
+
     public int ComboStack = 0;
 
     private float timer = 0.0f;
 
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -48,6 +52,21 @@ public class TFAnimtion : MonoBehaviour
         {
             Instantiate(Card, LeftHand.transform.position, CharacterMesh.transform.rotation, null);
         }
+    }
+
+    void ShootSkill(int _bIsRightHand)
+    {
+        Instantiate(Card_Skill, RightHand.transform.position, CharacterMesh.transform.rotation, null);
+    }
+
+    public void Attack()
+    {
+        anim.SetTrigger("Attack");
+    }
+
+    public void Skill()
+    {
+        anim.SetTrigger("Skill");
     }
 
     void SpawnEnemy()

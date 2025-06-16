@@ -6,6 +6,8 @@ TagManager:
   tags:
   - modelObject
   - Enemy
+  - Ignite
+  - TF
   layers:
   - Default
   - TransparentFX
