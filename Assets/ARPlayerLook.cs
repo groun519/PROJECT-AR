@@ -1,4 +1,4 @@
-using GLTFast.Schema;
+//using GLTFast.Schema;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +9,7 @@ public class ARPlayerLook : MonoBehaviour
 
     void Start()
     {
-        
+        cameraTransform = Camera.main.transform;
     }
 
     void Update()
